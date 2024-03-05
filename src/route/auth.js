@@ -224,6 +224,10 @@ router.post('/recovery-confirm', function (req, res) {
 router.get('/signup-confirm', function (req, res) {
   const { renew, email } = req.query
 
+  if (renew) {
+    Confirm.create(email)
+  }
+
   res.render('signup-confirm', {
     // вказуємо назву контейнера
     name: 'signup-confirm',

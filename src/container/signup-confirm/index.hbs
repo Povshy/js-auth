@@ -3,7 +3,7 @@
     {{> back-button}}
   </header>
 
-  <form action="" class="page__section">
+  <form class="page__section">
     <h1 class="page__title">Підтвердження пошти</h1>
 
     <p class="page__subtitle">На вашу пошту надіслано код для підтвердження облікового запису. Введіть його сюди</p>
@@ -17,6 +17,8 @@
     </div>
 
     <button onclick="signupConfirmForm.submit()" class="button button--disabled" type="button">Підтвердити</button>
+
+    <span class="alert alert--disabled">Помилка</span>
 
     <span class="link__prefix">Загубили код?
       <a href="/signup-confirm" class="link" id="renew">

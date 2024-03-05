@@ -41,7 +41,7 @@ router.get('/user-list-data', function (req, res) {
   }
 
   return res.status(200).json({
-    list: list.getList().map(({ id, email, role }) => ({
+    list: list.map(({ id, email, role }) => ({
       id,
       email,
       role,
